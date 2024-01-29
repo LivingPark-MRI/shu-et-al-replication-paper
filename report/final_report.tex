@@ -1,0 +1,441 @@
+% Template for PLoS
+% Version 3.6 Aug 2022
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file 
+% and leave only the final text of your manuscript. 
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2". 
+%
+% Do not use \cal for caligraphic font.  Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+%% user-defined packages
+\usepackage{ulem}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[export]{adjustbox}
+\usepackage{subfig}
+\usepackage{xltabular}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tabularray}
+\UseTblrLibrary{siunitx}
+\usepackage{longtable}
+\usepackage{csvsimple}
+\usepackage{pdflscape}
+\usepackage{geometry}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Title of submission to PLOS journals} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Name1 Surname\textsuperscript{1,2\Yinyang},
+Name2 Surname\textsuperscript{2\Yinyang},
+Name3 Surname\textsuperscript{2,3\textcurrency},
+Name4 Surname\textsuperscript{2},
+Name5 Surname\textsuperscript{2\ddag},
+Name6 Surname\textsuperscript{2\ddag},
+Name7 Surname\textsuperscript{1,2,3*},
+with the Lorem Ipsum Consortium\textsuperscript{\textpilcrow}
+\\
+\bigskip
+\textbf{1} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\textbf{2} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\textbf{3} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+\ddag These authors also contributed equally to this work.
+
+% Current address notes
+\textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+% Deceased author note
+\dag Deceased
+
+% Group/Consortium Author Note
+\textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* correspondingauthor@institute.edu
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+\section*{Abstract}
+this section will contain the abstract
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.   
+\section*{Author summary}
+Refer to comments in the Latex template as this may not be necessary.
+
+\linenumbers
+
+\section*{Introduction}
+this section will contain the introduction text
+
+\section*{Materials and methods}
+\subsection*{Cohort construction}
+
+Both the original study by Shu et al.~\cite{shu2021predicting} and the subsequent replication and reproducibility study by 
+Arafe et al.~\cite{Arafe2023.05.05.539590} selected patients with Parkinson's disease (PD) from the PPMI dataset and matched their 
+age, sex, and H\&Y score from the first of two visits spanning approximately 36 months apart. For the first visit, each patient 
+underwent an evaluation consisting of a clinical assessment and an MRI scan. They also had a follow-up clinical examination 3 years later. 
+Patients were classified as 'progressive' if their H\&Y score at the follow-up visit exceeded the score from 3 years prior; otherwise, they 
+were classified as 'stable'. Regarding inclusion criteria, Shu et al. created a cohort by limiting their selection to patients with MRI data 
+from a Siemens Verio 3T MRI machine, incorporating restrictions on repetition time, echo time, inversion time, field of view, matrix size, 
+and slice thickness. Their final cohort comprised 144 patients, equally distributed between progressive and stable subjects. 
+On the other hand, rather than a single cohort, Arafe et al. constructed 5 cohorts, each consisting of 72 stable and 72 progressive subjects. One 
+cohort aimed to replicate the Shu et al. cohort, while the other four were designed to assess the sensitivity of model predictions to 
+the selection process. Table~\ref{table:ppmiFilters} shows the various filters Arafe et al. used to create their 5 cohorts. 
+
+\begin{center}
+  \captionsetup{justification=centering, font=small}
+  \captionof{table}{Summary of Arafe et al.'s PPMI filters used to construct their 5 cohorts. Source:~\cite{Arafe2023.05.05.539590}}
+  \small
+  \begin{tblr}{
+    colspec={Q*{6}{X[c, -0.6]}},
+    column{1}={cmd=\bfseries},
+    rowspec={*{8}{m{1em}}},
+    row{1}={cmd=\bfseries}
+  }
+    & VRC & SRC & MSRC & NFRC & FSC \\
+    \hline
+    Research Group & PD & PD & PD & PD & PD \\
+    \hline
+    Acquisition Type & 3D & 3D & 3D & 3D & 3D \\
+    \hline
+    Field Strength & 3T & 3T & 3T & any & 3T \\
+    \hline
+    Slice Thickness & 1mm & 1mm & 1mm & 1mm $\le$ 1.2mm & 1mm \\
+    \hline
+    Manufacturer & Siemens & Siemens & any & any & Siemens \\
+    \hline
+    Manufacturer model & Verio & any & any & any & any \\
+    \hline
+    Weighting & T1 & T1 & T1 & T1 & T1 \\
+    \hline
+  \end{tblr}
+  \label{table:ppmiFilters}
+\end{center}
+
+Like Arafe et al. and Shu et al., as part of the selection process, we filtered the subjects in the PPMI database using the 
+following inclusion criteria:
+\begin{itemize}
+  \item \textbf{C1}: patient has a diagnosis of idiopathic PD;
+  \item \textbf{C2}: PPMI database contains records of at least 2 visits spaced approximately 3 years apart;
+  \item \textbf{C3}: PPMI database contains a T1-weighted MRI from the first visit determined by C2;
+  \item \textbf{C4}: PPMI database contains H\&Y scores for both visits. 
+\end{itemize}
+
+We used a variation of the PPMI filters in Table~\ref{table:ppmiFilters} to construct 7 cohorts. Specifically, the selection process for 
+Arafe et al.'s Multiple Scanner Replication Cohort (MSRC) and Functional State Cohort (FSC) form the basis for the remaining inclusion 
+criteria. Like MSRC, our 7 cohorts have been constructed with the following additional criteria:
+
+\begin{itemize}
+  \item \textbf{C5}: all MRI machine manufacturers and models are permissable;
+  \item \textbf{C6}: scanner restrictions: slice thickness = 1 mm and field strength = 3T;
+\end{itemize}
+
+After filtering the PPMI dataset for Criteria 1 to 6, visit pairs were formed for the remaining subjects while ensuring C2 and C3 remained true for each visit pair. 
+During this phase, an additional restriction was imposed for the formation of Cohorts 1 to 6 such that a patient's functional state (also called PD state), which 
+may be ``On" or ``Off", must be the same for both visits. The functional state of a patient, ``On" or ``Off", is determined by their PD medication status during clinical 
+examinations. As the classification into progressive or stable groups depends on the stability of H\&Y scores over time, this restriction bolsters the comparability of 
+these scores. Note that this restriction was also imposed on Arafe et al.'s FSC~\cite{Arafe2023.05.05.539590}.
+
+As the PPMI dataset is collected over an extended period of time and the protocol requires clinical evaluation in both ``On" and ``Off" functional states for every visit, many 
+subjects have more than one visit pair and it is possible for a subject to be classified as both progressive and stable for different visit pairs. Therefore, after the 
+creation of a cohort, validation checks were defined to ensure that any given subject was only included once, as either stable or progressive, in the resulting cohort. 
+
+One of our objectives was to create the largest possible cohorts that adhered to the stated restrictions. Thus, although Cohorts 1, 3, 5, and 7 were created 
+by matching patients from the progressive and stable classes on age, sex and H\&Y scores from the first visit, Cohorts 2, 4, and 6 used no matching filter.
+This approach allowed for larger cohorts but necessitated the creation of demographics feature sets to evaluate the impact of this uneven distribution on the results. 
+Cohorts 1 and 2 sampled visit pairs with PD state = "Off", Cohorts 5 and 6 sampled pairs with PD state = "On", and Cohorts 3 and 4 sampled visit pairs with 
+either PD state = "Off" or PD state = "On" for both visits. Cohort 7 was defined without any restrictions on the PD state (see Fig~\ref{cohortCreationFlowchart}).
+
+\begin{figure}[htbp]
+  \includegraphics[width=0.8\textwidth]{images/Cohort7_flowchart.png}
+  \caption{{\bf Cohort construction} Process of filtering the PPMI dataset to construct 7 cohorts.}
+  \label{cohortCreationFlowchart}
+\end{figure}
+
+\section*{Results}
+
+\subsection*{Cohorts}
+
+The demographics for Cohorts 1 to 7 are summarized in Table \ref{table:cohort_summary}. Cohorts 1 and 2 were sampled from the same set of visit pairs, comprising a 
+maximum of 140 subjects with PD state = ``Off" for both visits. Cohort 2 randomly sampled one visit pair for each of the available subjects and 
+distributed them to each class as evenly as possible. This resulted in 65 stable subjects and 75 progressive subjects. The mean age and standard deviation for the stable subjects 
+is 62.3±9.3 and 60.0±9.7 for the progressive subjects. There are 23 females and 42 males in the stable group, 28 females and 47 males in the progressive group. 
+Regarding H\&Y scores, 45 stable subjects have a score of 1, 17 a score of 2, and 3 have a score of 3. For the progressive subjects, only 8 have an H\&Y 
+score = 1 and 67 have an H\&Y score = 2. Cohort 1 is the smallest of the constructed cohorts with only 35 stable and 35 progressive subjects for a total of 70 
+subjects. The stable and progressive groups are composed of 13 females and 22 males, and 15 females and 20 males respectively. The mean age and standard deviation for the stable 
+subjects is 60.5±7.6 and 61.9±8.2 for the progressive subjects. There are 18 subjects with H\&Y score = 1 and 17 with score = 2 for both the stable and progressive 
+groups.
+
+Cohorts 3 and 4 sampled from a set of visit pairs for 194 subjects with either PD state = ``Off" or PD state =``On" for both visits. Cohort 3 has 118 subjects with 
+59 subjects in each class. The stable group has 21 females and 38 males, whereas the progressive group has 25 females and 34 males. The mean age and standard deviation for the stable 
+subjects and progressive subjects is 60.6±8.7 and 62.0±9.4 respectively. Both the stable and progressive groups have 26 subjects with H\&Y score = 1 and 33 subjects 
+with H\&Y score = 2. Cohort 4 is the largest cohort and is composed of 102 stable subjects and 92 progressive subjects. The mean age and standard deviation for the 
+stable and progressive groups are very similar to each other at 62.3±10.0 and 62.3±9.6 respectively. Cohort 4 has 38 females and 64 males in the stable group, whereas the 
+progressive group has 35 females and 57 males. The number of subjects in the stable group that have H\&Y score = 1 is 64, H\&Y score = 2 is 34, and H\&Y score = 3 is 4. 
+The number of subjects in the progressive group that have an H\&Y score of 1, 2, or 3 are 9, 83, and 0 respectively.
+
+Cohorts 5 and 6 sampled from the set of visit pairs defined for the 147 subjects with PD state = ``On" for both visits. Cohort 5 has 86 subjects evenly distributed into stable 
+and progressive groups of 43 each. The stable group is composed of 18 females and 25 males, and the progressive group has 16 females and 27 males. The mean age and standard 
+deviation for the stable group is 63.0±8.9 and 62.7±10.5 for the progressive group. There are 17 subjects in each group with H\&Y score = 1 and 26 subjects in each group 
+with H\&Y score = 2. Cohort 6 has 66 stable subjects and 81 progressive subjects for a total of 147 subjects. The stable group is composed of 24 females and 42 males with a mean 
+age and standard deviation of 62.7±10.4, and the progressive group has 33 females and 48 males with a mean age of 63.5±9.5. The stable group has 36 subjects with H\&Y score = 1, 28 subjects 
+with H\&Y score = 2, and 2 subjects with H\&Y score = 3. In contrast, the progressive group has 7 subjects with H\&Y score = 1, 74 subjects with H\&Y score = 2, and 0 subjects with 
+H\&Y score = 3. 
+
+Cohort 7 is the only cohort that samples from a set of visit pairs for 213 subjects without any restrictions for the PD state of a patient. This cohort was developed as a 
+reference cohort for comparison with those created by ~\cite{shu2021predicting} and ~\cite{Arafe2023.05.05.539590}. Cohort 7 has 72 stable and 72 progressive subjects for a total 
+of 144 subjects. There are 28 females and 44 males in the stable group and 30 females and 42 males in the progressive group. The mean age and standard deviation is 61.6±8.5 and 
+62.6±9.2 for the stable and progressive groups respectively. The stable and progressive groups each have 23 subjects with H\&Y score = 1 and 49 subjects with H\&Y score = 2. 
+
+\newgeometry{top=1cm, bottom=2cm, left=3.5cm, right=1.5cm}
+\begin{landscape}
+  \captionof{table}{Summary of the seven constructed cohorts.}
+  \begin{tblr}{
+    colspec={X[l,1]*{14}{X[-0.6]}},
+    column{1}={cmd=\bfseries},
+    rowspec={*{7}{m{3em}}},
+    row{1}={cmd=\bfseries},
+    row{5}={cmd=\num[separate-uncertainty]},
+    cell{5}{1}={guard},
+    hlines,
+    vlines={1,2,3,4,5,6,7,8}{solid},
+  }
+    & \SetCell[c=2]{c} Cohort 1 & & \SetCell[c=2]{c} Cohort 2 & & \SetCell[c=2]{c} Cohort 3 & & \SetCell[c=2]{c} Cohort 4 & & \SetCell[c=2]{c} Cohort 5 & & \SetCell[c=2]{c} Cohort 6  & & \SetCell[c=2]{c} Cohort 7 & \\
+    & Stable & Progr & Stable & Progr & Stable & Progr & Stable & Progr & Stable & Progr & Stable & Progr & Stable & Progr \\
+    Subjects, No. & 35 & 35 & 65 & 75 & 59 & 59 & 102 & 92 & 43 & 43 & 66 & 81 & 72 & 72 \\
+    F/M No. & 13/22 & 15/20 & 23/42 & 28/47 & 21/38 & 25/34 & 38/64 & 35/57 & 18/25 & 16/27 & 24/42 & 33/48 & 28/44 & 30/42 \\
+    \textbf{Age, mean SD} & 60.5 \pm 7.6 & 61.9 \pm 8.2 & 62.3 \pm 9.3 & 60.0 \pm 9.7 & 60.6 \pm 8.7 & 62.0 \pm 9.4 & 62.3 \pm 10.0 & 62.3 \pm 9.6 & 63.0 \pm 8.9 & 62.7 \pm 10.5 & 62.7 \pm 10.4 & 63.5 \pm 9.5 & 61.6 \pm 8.5 & 62.6 \pm 9.2 \\
+    Hoehn \& Yahr Stage 1 (n) & 18 & 18 & 45 & 8 & 26 & 26 & 64 & 9 & 17 & 17 & 36 & 7 & 23 & 23 \\
+    Hoehn \& Yahr Stage 2 (n) & 17 & 17 & 17 & 67 & 33 & 33 & 34 & 83 & 26 & 26 & 28 & 74 & 49 & 49 \\
+    Hoehn \& Yahr Stage 3 (n) & 0 & 0 & 3 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 2 & 0 & 0 & 0 \\
+  \end{tblr}
+  \label{table:cohort_summary}
+\end{landscape}
+\restoregeometry
+
+\newgeometry{top=1cm, bottom=2cm, left=2cm, right=2cm}
+\begin{landscape}
+  \begin{table}[!ht]
+    \centering
+    \caption{ROC AUC scores for Cohorts 1 to 7 for the feature sets F1 to F9}
+    \label{table:results}
+    \footnotesize
+    \csvautobooktabular{./data/cohort_results.csv}
+  \end{table}
+\end{landscape}
+\restoregeometry
+
+\subsection*{Feature Extraction}
+
+\subsection*{Experiments}
+
+
+\section*{Discussion}
+
+This section discusses the findings.
+
+\section*{Conclusion}
+
+The conclusion is here. 
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 Fig.}
+\label{S1_Fig}
+{\bf Bold the title sentence.} Add descriptive text after the title of the item (optional).
+
+\section*{Acknowledgments}
+
+\nolinenumbers
+
+\bibliography{bib}
+
+\end{document}
+

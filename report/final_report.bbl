@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{shu2021predicting}
+Shu ZY, Cui SJ, Wu X, Xu Y, Huang P, Pang PP, et~al.
+\newblock Predicting the progression of {P}arkinson's disease using conventional MRI and machine learning: An application of radiomic biomarkers in whole-brain white matter.
+\newblock Magnetic Resonance in Medicine. 2021;85(3):1611--1624.
+
+\bibitem{Arafe2023.05.05.539590}
+Arafe M, Bhagwat N, Chatelain Y, Dugr{\'e} M, Soko{\l}owski A, Wang M, et~al.
+\newblock Predicting Parkinson{\textquoteright}s disease progression using MRI-based white matter radiomic biomarker and machine learning: a reproducibility and replicability study.
+\newblock bioRxiv. 2023;doi:{10.1101/2023.05.05.539590}.
+
+\end{thebibliography}
