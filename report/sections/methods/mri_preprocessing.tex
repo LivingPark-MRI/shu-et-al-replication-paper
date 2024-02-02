@@ -1,0 +1,14 @@
+\subsubsection*{Segmentation of T1-weighted images}
+For feature sets \textbf{F4} to \textbf{F9}, we used the Segmentation module of Statistical Parametric Mapping (SPM; \url{https://www.fil.ion.ucl.ac.uk/spm/software/spm12} ~\cite{ashburner2012spm}) version 12 that was also the segmentation method used in Shu et al. We used SPM12's default parameters to get the tissue probability masks and build a WM binary mask for each patient. 
+
+
+\subsubsection*{Quality control}
+
+In Shu et al., two experienced neuro-radiologists used ITK-snap to manually edit WM segmentations. The modifications included (i) removal of non-brain tissue, brain stem and cerebellum and (ii) correcting segmentation errors in WM tissues. We used 3D Slicer v.5.0.3 to visualize and assess the quality of WM segmentations produced by SPM12. For each MRI scan, we reviewed the axial, coronal and sagittal slices. Data was excluded if it met at least one of the following criteria:
+
+\begin{itemize}
+    \item There is WM outside of the segmented WM mask;
+    \item There is GM inside the segmented WM mask;
+    \item The MRI has any common artifacts;
+    \item The MRI has a low signal-to-noise (SNR) ratio.
+\end{itemize}

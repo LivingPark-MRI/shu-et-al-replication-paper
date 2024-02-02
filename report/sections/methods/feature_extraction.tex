@@ -1,0 +1,60 @@
+We extracted nine sets of features for each cohort, labeled as F1 through F9. These feature sets are variations of Shu et al.'s original sets. Specifically, three sets are based on patient demographics, while the remaining six sets consist of radiomics-based features.
+
+\subsubsection*{Demographic features}
+% sephora section, talk about F1 - F3
+
+\subsubsection*{Radiomic features}
+The A.K. software (Artificial-Intelligent Radio-Genomics Kits; GE Healthcare, Chicago, IL, USA) used in Shu et al. is not publicly available. Therefore, we used PyRadiomics \cite{pyradiomics_2017}, an open-source Python package for the extraction of radiomics features. It is important to note that PyRadiomics is recognized in the IBSI (Image Biomarker Standardization Initiative) community \cite{Zwanenburg_2020}.
+
+In Shu et al., the authors extracted a total of 378 features, including 42 histograms features, 10 Haralick features, 9 FormFactor features, 126 GLCM features, 180 GLRLM features, and 11 gray level region matrix features (GLZSM). From these 378 features, the authors used the maximum relevance minimum redundancy (mRMR) algorithm to extract the following top 7 features and train the model:
+\begin{itemize}
+    \item Feature 1: GLCMEntropy\_AllDirection\_offset1
+    \item Feature 2: RunLengthNonuniformity\_angle45\_offset7
+    \item Feature 3: Correlation\_angle45\_offset1
+    \item Feature 4: HaralickCorrelation\_angle90\_offset4
+    \item Feature 5: ShortRunEmphasis\_angle0\_offset7
+    \item Feature 6: HaralickCorrelation\_AllDirection\_offset7
+    \item Feature 7: Inertia\_AllDirection\_offset4
+\end{itemize}
+
+The first set of radiomic features, F4, refer to the set of PyRadiomics features that best match the 7 A.K software features from Shu et al., namely:
+
+\begin{itemize}
+    \item Feature 1: Joint Entropy
+    \item Feature 2: Run Length Non Uniformity
+    \item Feature 3 / Feature 4 / Feature 6: Correlation
+    \item Feature 5: Short Run Low Gray Level Emphasis
+    \item Feature 7: Contrast
+\end{itemize}
+
+For feature sets F5 and F6, we leveraged the entire set of features extracted with PyRadiomics by applying two distinct feature selection techniques: Principal Component Analysis (PCA) for F5 and Maximum Relevance Minimum Redundancy (MRMR) for F6. Further details regarding the parameters and implementation of these techniques will be provided in subsequent sections.
+
+The mapping between A.K software and PyRadiomics features is not exact. Indeed, the A.K software, unlike PyRadiomics, provides every feature at a specific angle and offset. In PyRadiomics, for each feature class, the value of a feature is calculated for each angle separately, after which the mean of these values is returned. The exact definitions of these features are available in the PyRadiomics documentation (\url{https://pyradiomics.readthedocs.io/en/latest/features.html}) and in the supplementary material of~\cite{shu2021predicting}, Table S2. 
+
+To address this issue, we developed an extended version of PyRadiomics that allows users to request features at specific angles and offsets. Using this extension, we were able to construct three additional feature sets. The first of three feature sets, F7, consists of the 7 features found in Shu et al. usign the same offset and angle. In contrast, F8 and F9 utilize all features extracted at every angle and offset, applying both PCA and MRMR to derive a final set of features.
+
+Here is a summary of each feature set:
+
+\begin{table}[h]
+  \centering
+  \captionof{table}{Summary of the nine feature sets.}
+  \begin{tblr}{
+    colspec={X[c,1] X[3,l]},
+    column{1}={c},
+    row{1}={c},
+    hlines,
+  }
+    Feature Set & Summary. \\
+    F1 & Patient demographics including age, sex, and H\&Y score. \\
+    F2 & Patient demographics including age, sex, and UPDRS score. \\
+    F3 & Patient demographics including age, sex, H\&Y score, and UPDRS score. \\
+    F4 & PyRadiomics features aligned with Shu et al.'s A.K. Software features. \\
+    F5 & PyRadiomics features with PCA feature selection. \\
+    F6 & PyRadiomics features with MRMR feature selection. \\
+    F7 & Angled PyRadiomics features aligned with Shu et al.'s A.K. Software features. \\
+    F8 & Angled PyRadiomics features with PCA feature selection. \\
+    F9 & Angled PyRadiomics features with MRMR feature selection. \\
+  \end{tblr}
+  \label{table:feature_summary}
+\end{table}
+
