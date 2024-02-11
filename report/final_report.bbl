@@ -10,4 +10,21 @@ Arafe M, Bhagwat N, Chatelain Y, Dugr{\'e} M, Soko{\l}owski A, Wang M, et~al.
 \newblock Predicting Parkinson{\textquoteright}s disease progression using MRI-based white matter radiomic biomarker and machine learning: a reproducibility and replicability study.
 \newblock bioRxiv. 2023;doi:{10.1101/2023.05.05.539590}.
 
+\bibitem{pyradiomics_2017}
+van Griethuysen JJM, Fedorov A, Parmar C, Hosny A, Aucoin N, Narayan V, et~al.
+\newblock Computational radiomics system to decode the radiographic phenotype.
+\newblock Cancer Research. 2017;77(21).
+\newblock doi:{10.1158/0008-5472.can-17-0339}.
+
+\bibitem{Zwanenburg_2020}
+Zwanenburg A, Vallières M, Abdalah MA, Aerts HJWL, Andrearczyk V, Apte A, et~al.
+\newblock The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping.
+\newblock Radiology. 2020;295(2):328–338.
+\newblock doi:{10.1148/radiol.2020191145}.
+
+\bibitem{ashburner2012spm}
+Ashburner J.
+\newblock SPM: a history.
+\newblock Neuroimage. 2012;62(2):791--800.
+
 \end{thebibliography}
