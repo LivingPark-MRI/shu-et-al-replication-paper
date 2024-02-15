@@ -27,13 +27,11 @@ The first set of radiomic features, F4, refer to the set of PyRadiomics features
     \item Feature 7: Contrast
 \end{itemize}
 
-For feature sets F5 and F6, we leveraged the entire set of features extracted with PyRadiomics by applying two distinct feature selection techniques: Principal Component Analysis (PCA) for F5 and Maximum Relevance Minimum Redundancy (MRMR) for F6. Further details regarding the parameters and implementation of these techniques will be provided in subsequent sections.
+For feature sets F5 and F6, we leveraged the entire set of relevant features extracted with PyRadiomics by applying two distinct feature selection techniques: Principal Component Analysis (PCA) for F5 and mRMR for F6. Further details regarding the parameters and implementation of these techniques will be provided in subsequent sections.
 
 The mapping between A.K software and PyRadiomics features is not exact. Indeed, the A.K software, unlike PyRadiomics, provides every feature at a specific angle and offset. In PyRadiomics, for each feature class, the value of a feature is calculated for each angle separately, after which the mean of these values is returned. The exact definitions of these features are available in the PyRadiomics documentation (\url{https://pyradiomics.readthedocs.io/en/latest/features.html}) and in the supplementary material of~\cite{shu2021predicting}, Table S2. 
 
-To address this issue, we developed an extended version of PyRadiomics that allows users to request features at specific angles and offsets. Using this extension, we were able to construct three additional feature sets. The first of three feature sets, F7, consists of the 7 features found in Shu et al. usign the same offset and angle. In contrast, F8 and F9 utilize all features extracted at every angle and offset, applying both PCA and MRMR to derive a final set of features.
-
-Here is a summary of each feature set:
+To address this issue, we developed an extended version of PyRadiomics that allows users to request features at specific angles and offsets. Using this extension, we were able to construct three additional feature sets. The first of three feature sets, F7, consists of the 7 features found in Shu et al. usign the same offset and angle. F8 and F9 utilize all features extracted at every angle and offset, applying both PCA and MRMR to derive a final set of features. Table ~\ref{table:feature_summary} summarizes the nine feature sets discussed.
 
 \begin{table}[h]
   \centering
