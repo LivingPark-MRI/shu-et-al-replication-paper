@@ -1,7 +1,30 @@
-We extracted nine sets of features for each cohort, labeled as F1 through F9. These feature sets are variations of Shu et al.'s original sets. Specifically, three sets are based on patient demographics, while the remaining six sets consist of radiomics-based features.
+We extracted nine sets of features for each cohort, labeled as F1 through F9. These feature sets are variations of Shu et al.'s original sets. Specifically, 
+three sets are based on patient demographics, while the remaining six sets consist of radiomics-based features (See Fig~\ref{featureExtraction}).
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\linewidth]{images/Workflow_feature_extraction.pdf}
+  \caption{{\bf Feature Extraction} Extraction of the radiomic and demographic features.}
+  \label{featureExtraction}
+\end{figure}
 
 \subsubsection*{Demographic features}
-% sephora section, talk about F1 - F3
+Three sets of demographic features were defined:
+
+\begin{itemize}
+    \item \textbf{F1}: age, sex, H\&Y score
+    \item \textbf{F2}: age, sex, UPDRS total score
+    \item \textbf{F3}: age, sex, H\&Y score, UPDRS total score
+\end{itemize}
+
+
+The selection of the age, sex, Unified Parkinson's Disease Rating Scale (UPDRS) total score, and the H\&Y score 
+for the demographic features is due to the possibility that they may be contributing factors to whether a subject 
+is classified as progressive or stable; meaning an imbalanced dataset with respect to these features may impact the results.  
+The demographic features were taken from the first of the selected visits for each subject in the cohorts. While the age, sex, 
+and H\&Y score were accessible in the study files from the PPMI database, the Unified Parkinson's Disease Rating Scale (UPDRS) scores 
+are derived from a four part assessment of the motor and non-motor functions of a subject~\cite{goetz_tilley_shaftman_stebbins_fahn_martinez-martin_poewe_sampaio_stern_dodel_et_al._2008}. 
+The scores from all four parts of the UPDRS assessment were summed to obtain the UPDRS total score.
 
 \subsubsection*{Radiomic features}
 The A.K. software (Artificial-Intelligent Radio-Genomics Kits; GE Healthcare, Chicago, IL, USA) used in Shu et al. is not publicly available. Therefore, we used PyRadiomics \cite{pyradiomics_2017}, an open-source Python package for the extraction of radiomics features. It is important to note that PyRadiomics is recognized in the IBSI (Image Biomarker Standardization Initiative) community \cite{Zwanenburg_2020}.
@@ -33,7 +56,7 @@ The mapping between A.K software and PyRadiomics features is not exact. Indeed, 
 
 To address this issue, we developed an extended version of PyRadiomics that allows users to request features at specific angles and offsets. Using this extension, we were able to construct three additional feature sets. The first of three feature sets, F7, consists of the 7 features found in Shu et al. usign the same offset and angle. F8 and F9 utilize all features extracted at every angle and offset, applying both PCA and MRMR to derive a final set of features. Table ~\ref{table:feature_summary} summarizes the nine feature sets discussed.
 
-\begin{table}[h]
+\begin{table}[ht]
   \centering
   \captionof{table}{Summary of the nine feature sets.}
   \begin{tblr}{
