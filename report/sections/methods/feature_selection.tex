@@ -1,3 +1,7 @@
-For the demographics data, due to the limited number of features, we opted against applying any reduction techniques. As for the radiomic features, specifically F5, F6, F8 \& F9, we implemented two feature selection methods drawn from Shu et al.'s research: MRMR \cite{Ding_Peng} and PCA. 
+For the demographics data, due to the limited number of features, we opted against applying any reduction techniques. As for the radiomic features, specifically 
+F5, F6, F8 \& F9, we implemented two feature selection methods drawn from Shu et al.'s research: MRMR \cite{Ding_Peng} and PCA. 
 
-We imported the MRMR library using the following GitHub repository (MRMR; \url{https://github.com/smazzanti/mrmr}) and used K=7 just as in Shu et al. Additionally, we imported the PCA library from scikit-learn. Our analysis involved testing PCA with different numbers of components (2, 3, 5, 7, 10) in a cross-validation pipeline. This comprehensive approach allowed us to explore the effectiveness of each technique in reducing dimensionality and selecting relevant features, thus enhancing the robustness of our analysis.
+We imported the MRMR library using the following GitHub repository (MRMR; \url{https://github.com/smazzanti/mrmr}) and used K=7 just as in Shu et al. 
+Additionally, we imported the PCA library from scikit-learn. Our analysis involved testing PCA with different numbers of components (2, 3, 5, 7, 10) in 
+a cross-validation pipeline. This comprehensive approach allowed us to explore the effectiveness of each technique in reducing dimensionality and selecting relevant 
+features, thus enhancing the robustness of our analysis.

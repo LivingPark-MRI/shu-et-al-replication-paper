@@ -1,7 +1,10 @@
-\subsubsection*{Demographics model}
-
 \subsubsection*{Image-based model}
-To predict disease progression, Shu et al. trained a linear SVM based on the 7 top features extracted and selected from segmented WM masks of PD patients. The authors compared the SVM with three other machine learning methods, including Gaussian Naive Bayes (GNB), k-nearest neighbours (KNN), and decision tree (DT) classifiers. Since the methods of Shu et al. did not mention the name and values of the classification hyper-parameters that were optimized, we optimized the usual parameters for these classifiers using the ranges in Table~\ref{table:hyperParamTable}. We implemented the models using scikit-learn v1.1.3 and Python v3.10.4.
+To predict disease progression, Shu et al. trained a linear SVM based on the 7 top features extracted and selected from 
+segmented WM masks of PD patients. The authors compared the SVM with three other machine learning methods, including 
+Gaussian Naive Bayes (GNB), k-nearest neighbours (KNN), and decision tree (DT) classifiers. Since the methods of Shu et al. 
+did not mention the name and values of the classification hyper-parameters that were optimized, we optimized the usual 
+parameters for these classifiers using the ranges in Table~\ref{table:hyperParamTable}. We implemented the models using 
+scikit-learn v1.1.3 and Python v3.10.4.
 
 \begin{table}[h]
 \centering
@@ -31,3 +34,10 @@ To predict disease progression, Shu et al. trained a linear SVM based on the 7 t
 \caption{Ranges used in hyper-parameter optimization.}
 \label{table:hyperParamTable}
 \end{table}
+
+\subsubsection*{Demographics model}
+
+For comparison and analysis purposes, we also trained linear SVM, GNB, KNN, and DT classifiers on the demographics 
+feature sets F1 - F3 for each of the cohorts. As with the image based models, we implemented the models with 
+scikit-learn v1.1.3 and Python v3.10.4. Furthermore, the hyperparameter optimization process was applied in the same fashion  
+with the range of parameters listed in Table~\ref{table:hyperParamTable}.
