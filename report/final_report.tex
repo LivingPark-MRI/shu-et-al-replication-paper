@@ -177,8 +177,8 @@
 
 %% Include all macros below
 
-\newcommand{\lorem}{{\bf LOREM}}
-\newcommand{\ipsum}{{\bf IPSUM}}
+\newcommand{\TG}[1]
+{\color{blue}\textsc{From Tristan:}#1\color{black}}
 
 %% END MACROS SECTION
 
@@ -189,7 +189,7 @@
 % Title must be 250 characters or less.
 \begin{flushleft}
 {\Large
-\textbf\newline{Title of submission to PLOS journals} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+\textbf\newline{Can we predict Parkinson's disease Hoehn and Yahr score progression from MRI-based radiomics features?} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
 }
 \newline
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
@@ -251,7 +251,14 @@ Refer to comments in the Latex template as this may not be necessary.
 \linenumbers
 
 \section*{Introduction}
-this section will contain the introduction text
+
+\begin{itemize}
+\item Why predicting PD progression is useful 
+\item The potential of MRI features. Explain the need to assess them comparatively to demographics/clinical models.
+\item Shu et al and Arafe et al
+\item Axes of variability: medication status (on vs off), feature extraction, cross-validation scheme
+\item This study: build on Arafe et al, abstracting methods from Shu et al. Additional cohort definitions. Feature extraction (angled).
+\end{itemize}
 
 \section*{Materials and methods}
 \input{sections/methods/overview.tex}

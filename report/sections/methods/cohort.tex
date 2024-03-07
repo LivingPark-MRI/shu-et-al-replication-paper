@@ -1,4 +1,4 @@
-Both the original study by Shu et al.~\cite{shu2021predicting} and the subsequent replication and reproducibility study by 
+Our cohort definition workflows from the PPMI dataset are depicted in Figure~\ref{cohortCreationFlowchart}. Both the original study by Shu et al.~\cite{shu2021predicting} and the subsequent replication and reproducibility study by 
 Arafe et al.~\cite{Arafe2023.05.05.539590} selected patients with Parkinson's disease (PD) from the PPMI dataset and matched their 
 age, sex, and H\&Y score from the first of two visits spanning approximately 36 months apart. For the first visit, each patient 
 underwent an evaluation consisting of a clinical assessment and an MRI scan. They also had a follow-up clinical examination 3 years later. 
@@ -42,7 +42,7 @@ One of our objectives was to create the largest possible cohorts that adhered to
 by matching patients from the progressive and stable classes on age, sex and H\&Y scores from the first visit, Cohorts 2, 4, and 6 used no matching filter.
 This approach allowed for larger cohorts but necessitated the creation of demographics feature sets to evaluate the impact of this uneven distribution on the results. 
 Cohorts 1 and 2 sampled visit pairs with PD state = "Off", Cohorts 5 and 6 sampled pairs with PD state = "On", and Cohorts 3 and 4 sampled visit pairs with 
-either PD state = "Off" or PD state = "On" for both visits. Cohort 7 was defined without any restrictions on the PD state (see Fig~\ref{cohortCreationFlowchart}).
+either PD state = "Off" or PD state = "On" for both visits. Cohort 7 was defined without any restrictions on the PD state.
 
 \begin{figure}[!ht]
   \centering
