@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.14)  11 FEB 2024 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.14)  6 MAR 2024 22:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -808,17 +808,33 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./sections/methods/cohort.tex [1
+ (./sections/methods/overview.tex
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+pdfTeX warning: pdflatex (file ./images/Methods_workflow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/Methods_workflow.pdf, id=5, 1061.23074pt x 845.55835pt>
+File: images/Methods_workflow.pdf Graphic file (type pdf)
+<use images/Methods_workflow.pdf>
+Package pdftex.def Info: images/Methods_workflow.pdf  used on input line 10.
+(pdftex.def)             Requested size: 379.4175pt x 187.47241pt.
+) (./sections/methods/cohort.tex [1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2 <./images/Methods_workflow.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/cohort_flowhart.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/cohort_flowhart.pdf, id=30, 1071.49002pt x 1207.93483pt>
+<images/cohort_flowhart.pdf, id=57, 1071.49002pt x 1207.93483pt>
 File: images/cohort_flowhart.pdf Graphic file (type pdf)
 <use images/cohort_flowhart.pdf>
 Package pdftex.def Info: images/cohort_flowhart.pdf  used on input line 49.
 (pdftex.def)             Requested size: 379.4175pt x 427.72319pt.
-) (./sections/methods/feature_extraction.tex [2] [3 <./images/cohort_flowhart.pdf>]
+) (./sections/methods/feature_extraction.tex
+
+pdfTeX warning: pdflatex (file ./images/Workflow_feature_extraction.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/Workflow_feature_extraction.pdf, id=59, 889.62085pt x 874.71078pt>
+File: images/Workflow_feature_extraction.pdf Graphic file (type pdf)
+<use images/Workflow_feature_extraction.pdf>
+Package pdftex.def Info: images/Workflow_feature_extraction.pdf  used on input line 6.
+(pdftex.def)             Requested size: 379.4175pt x 373.06184pt.
+[3] [4 <./images/cohort_flowhart.pdf>] [5 <./images/Workflow_feature_extraction.pdf>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -831,11 +847,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-
+) (./sections/methods/mri_preprocessing.tex [6]) (./sections/methods/feature_selection.tex) (./sections/methods/models.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sections/methods/mri_preprocessing.tex [4]) [5] [6]
+) [7] (./sections/methods/model_evaluation.tex
+
+pdfTeX warning: pdflatex (file ./images/Workflow_ML_pipeline.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/Workflow_ML_pipeline.pdf, id=262, 836.41824pt x 1090.0725pt>
+File: images/Workflow_ML_pipeline.pdf Graphic file (type pdf)
+<use images/Workflow_ML_pipeline.pdf>
+Package pdftex.def Info: images/Workflow_ML_pipeline.pdf  used on input line 21.
+(pdftex.def)             Requested size: 379.4175pt x 494.47015pt.
+) (./sections/results/cohorts.tex [8] [9 <./images/Workflow_ML_pipeline.pdf>]) [10]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: letterpaper
@@ -871,7 +895,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 312.
+(caption)                particular \caption on input line 286.
 See the caption package documentation for explanation.
 
 > Step: init table outer spec.
@@ -888,217 +912,217 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             Use "uncertainty-mode = separate" as a replacement.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 6 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 61\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 4 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 5 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 7 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 59\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 6 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 61\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 4 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 5 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 7 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 59\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 6 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 61\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 4 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 5 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 7 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 59\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 63\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 0 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 9 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 1 \OMS/cmsy/m/n/10 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []$\OT1/cmr/m/n/10 (+20) 62\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (+20) 3 \OMS/cmsy/m/n/10 ^^F
  []
 
-[7
+[11
 
 
 ]
@@ -1134,15 +1158,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--331
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [8
+ [12
 
 
 
 
-] (./final_report.bbl) [9
+] (./final_report.bbl [13
 
 
-] 
+]) [14] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./final_report.aux)
  ***********
@@ -1153,18 +1177,18 @@ Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25296 strings out of 474166
- 508544 string characters out of 5745489
+ 25378 strings out of 474166
+ 510753 string characters out of 5745489
  2006525 words of memory out of 5000000
- 47105 multiletter control sequences out of 15000+600000
- 573073 words of font info for 117 fonts, out of 8000000 for 9000
+ 47143 multiletter control sequences out of 15000+600000
+ 573439 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,133p,1062b,1213s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on final_report.pdf (9 pages, 272288 bytes).
+Output written on final_report.pdf (14 pages, 544921 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 29190 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 29211 words of extra memory for PDF output out of 29859 (max. 10000000)
 

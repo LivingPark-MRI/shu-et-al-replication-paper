@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex final_report"] 1707694527.73219 "final_report.aux" "final_report.bbl" "final_report" 1707695535.03592 0
-  "./bib.bib" 1707678546.82593 5812 fcaa2089d5c3badec57800693af0c23d ""
+["bibtex final_report"] 1709783128.41635 "final_report.aux" "final_report.bbl" "final_report" 1709783180.72295 0
+  "./bib.bib" 1709769483.37448 7553 b2fd390b7ea81bbe2e395a13378fd41f ""
   "./plos2015.bst" 1706461996.38291 38071 b81f186f4b41cf496154afb7aeec3301 ""
-  "final_report.aux" 1707695534.57045 1995 7fc18e0eb7ee9104780abf4544e3727a "pdflatex"
+  "final_report.aux" 1709783180.08188 4320 20d93a23f78691eccf21a45019ef567e "pdflatex"
   (generated)
   "final_report.bbl"
   "final_report.blg"
   (rewritten before read)
-["pdflatex"] 1707695529.76055 "/home/seph/source/shu-et-al-replication-paper/report/final_report.tex" "final_report.pdf" "final_report" 1707695535.03616 0
-  "/home/seph/source/shu-et-al-replication-paper/report/final_report.tex" 1707692450.12046 16377 e250b5a44adc370c6157fb884406e89e ""
+["pdflatex"] 1709783174.24433 "/home/seph/source/shu-et-al-replication-paper/report/final_report.tex" "final_report.pdf" "final_report" 1709783180.72331 0
+  "/home/seph/source/shu-et-al-replication-paper/report/final_report.tex" 1709783082.09186 12333 063747dcc94df0865c52867bf8847d66 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -179,14 +179,22 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1705271696 8218546 9ebccfb7e926a0364c7aa8f14409a5c0 ""
   "/usr/local/texlive/2023/texmf.cnf" 1705271607.12717 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "data/cohort_results2.csv" 1707695529.24045 6385 96b491413ac4d164a4f0012b30825f56 ""
-  "final_report.aux" 1707695534.57045 1995 7fc18e0eb7ee9104780abf4544e3727a "pdflatex"
-  "final_report.bbl" 1707694527.90045 1440 b63c7c8dedfdce1242c5539de45c932c "bibtex final_report"
-  "final_report.out" 1707695530.81045 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "final_report.tex" 1707692450.12046 16377 e250b5a44adc370c6157fb884406e89e ""
+  "final_report.aux" 1709783180.08188 4320 20d93a23f78691eccf21a45019ef567e "pdflatex"
+  "final_report.bbl" 1709783128.61187 2458 cfeebe672081a2c81a323e98c5657c64 "bibtex final_report"
+  "final_report.out" 1709783175.61188 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "final_report.tex" 1709783082.09186 12333 063747dcc94df0865c52867bf8847d66 ""
+  "images/Methods_workflow.pdf" 1709777531.24386 44155 4cac5796d742578e58999e9d985d542d ""
+  "images/Workflow_ML_pipeline.pdf" 1709769307.95447 179850 a844126c82573afc2c950b69e4bf5198 ""
+  "images/Workflow_feature_extraction.pdf" 1709769307.95447 38884 ac0027d79b8f8323394bf414f31381e9 ""
   "images/cohort_flowhart.pdf" 1707691816.73795 66006 c6507fae70da5718b024766a27149d58 ""
-  "sections/methods/cohort.tex" 1707693674.88043 4796 08a51eefa9fbc1eaac724c5e2ed2269e ""
-  "sections/methods/feature_extraction.tex" 1707678546.82593 4396 a1162216985afaa7280a82fe54fb4928 ""
+  "sections/methods/cohort.tex" 1709502662.05356 4796 08a51eefa9fbc1eaac724c5e2ed2269e ""
+  "sections/methods/feature_extraction.tex" 1709773586.1637 5779 0fabab375140aab58023ab19e607e2f2 ""
+  "sections/methods/feature_selection.tex" 1709781287.10186 818 d8639aa22804dbcfff8a448218d08f33 ""
+  "sections/methods/model_evaluation.tex" 1709769307.95447 2116 6ee356c38b7173a1166b4a0b6b5fec65 ""
+  "sections/methods/models.tex" 1709776396.27186 2020 16e8b42751be9a450dac1a8503c2f337 ""
   "sections/methods/mri_preprocessing.tex" 1707678546.82593 1190 905ed2626f7b7edb3b8e7a07dbd7fb4d ""
+  "sections/methods/overview.tex" 1709783173.98188 1721 d79661fa8751ae4d7d59e3013ad386d4 ""
+  "sections/results/cohorts.tex" 1709769307.93447 4258 a3020273751d6e14e49349b48efd437b ""
   (generated)
   "final_report.aux"
   "final_report.log"
