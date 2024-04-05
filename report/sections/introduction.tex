@@ -1,0 +1,70 @@
+Parkinson's disease (PD) involves the progressive degeneration of brain neurons, significantly reducing dopamine and affecting motor control~\cite{fahn_2003}. 
+This leads to symptoms like tremors and stiffness, and extends beyond motor functions, underscoring the disorder's multifaceted nature~\cite{xia_yao_ye_cheng_2020}. 
+Given the variability in how PD manifests and progresses among individuals, accurately assessing the disease's trajectory and rate of progression, especially in its 
+early stages, presents significant challenges~\cite{saeed_compagnone_aviv_strafella_black_lang_masellis_2017}~\cite{seyed-mohammad_fereshtehnejad_yashar_zeighami_dagher_postuma_2017}. 
+In response to these challenges, certain studies have employed machine learning (ML) techniques to analyze various types of data beyond traditional demographic and clinical data. 
+For instance, some of these studies have utilized features extracted from Magnetic Resonance Imaging (MRI) scans of patients' brains or data pertinent to their gait
+~\cite{xia_yao_ye_cheng_2020}~\cite{9207380}~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}
+~\cite{oscar_pena_nogales_2019}. The objectives of these studies encompass categorizing PD subtypes~\cite{seyed-mohammad_fereshtehnejad_yashar_zeighami_dagher_postuma_2017}
+~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}, identifying biomarkers of progression~\cite{oscar_pena_nogales_2019}
+~\cite{burciu_ofori_archer_wu_pasternak_mcfarland_okun_vaillancourt_2017}, or predicting future PD severity~\cite{xia_yao_ye_cheng_2020}
+~\cite{abbasi_seyed_mohammad_fereshtehnejad_yashar_zeighami_kevin_michel_herve_larcher_postuma_dagher_2020}, the rate of disease progression~\cite{shu2021predicting}
+~\cite{wang_wu_brown_zhang_liu_han_zuo_cheng_feng_2022}, or specific conditions such as levodopa-induced dyskinesia~\cite{luo_chen_gui_2023}.
+
+Regardless of the specific research goal — predicting the severity, trajectory, or progression rate of PD — MRI scans are a type of data that is frequently used as they provide 
+superior visualization of the brain's soft tissues. Moreover, their non-invasive nature and widespread availability render them particularly useful~\cite{a_jon_stoessl_wr_wayne_martin_mckeown_sossi_2011}. 
+Consequently, features extracted from MRI scans have been instrumental in numerous PD progression studies, albeit the types of MRI scans employed may vary. Diffusion MRI scans, 
+for instance, were utilized by Burciu et al. to ascertain whether free water in the posterior substantia nigra constitutes a biomarker for PD progression~\cite{burciu_ofori_archer_wu_pasternak_mcfarland_okun_vaillancourt_2017}. 
+Similarly, aiming to identify biomarkers capable of predicting PD progression, Oscar et al. and Abbasi et al. employed diffusion MRI and Diffusion Tensor Imaging (DTI)
+respectively in their analysis~\cite{oscar_pena_nogales_2019}~\cite{abbasi_seyed_mohammad_fereshtehnejad_yashar_zeighami_kevin_michel_herve_larcher_postuma_dagher_2020}. 
+Hou et al. utilized functional MRI (fMRI), which measures brain activity through fluctuations in blood flow, to predict PD severity~\cite{hou_luo_yang_ou_song_wei_cao_zhao_wu_shang_et_al._2016}, and multiple studies 
+have utilized T1-weighted MRI scans to determine PD progression~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}~\cite{shu2021predicting}
+~\cite{wang_wu_brown_zhang_liu_han_zuo_cheng_feng_2022}. The conventional structural T1-weighted MRI scans, owing to their simpler processing requirements, are less costly and more accessible than some 
+of the other types of MRIs. Additionally, existing software algorithms for image segmentation further enhance the utility of T1 MRIs for studies predicting PD progression~\cite{shu2021predicting}. 
+While MRI scans may provide insights into changes in the brain structure associated with the progression of PD, establishing precise metrics for evaluating disease progression is 
+equally crucial. Several clinical assessment tools are available for this purpose, including the Hoehn and Yahr (H\&Y) scale~\cite{hoehn_yahr_1998}, the Movement Disorder 
+Society's revised version of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS)~\cite{goetz_tilley_shaftman_stebbins_fahn_martinez-martin_poewe_sampaio_stern_dodel_et_al._2008}, 
+and the Montreal Cognitive Assessment (MoCA)~\cite{nasreddine_phillips_valérie_bedirian_charbonneau_whitehead_collin_cummings_chertkow_2005}, each offering insights into the patient's state 
+at the time of evaluation.
+
+% 3. 
+
+% - who tried to predict progression using any metric with T1s
+
+% - for the ppl who tried to predict progression,
+%  - what metric?
+%  - which dataset?
+%  - how many subjects and what was the division?
+%  - what types of features were they looking at?
+%  - what kind of results did they get? 
+
+Delving into the realm of research leveraging T1-weighted MRI scans for predicting PD progression, we spotlight three intriguing studies. Each embarks on a unique path, utilizing differing 
+PD progression metrics, cohort sizes, and ML techniques.
+
+% NOTE: I'm still putting together the rest of the above paragraph but it's a work in progress so I'm not including it here. I should note that I've included the three studies below
+% that I've been working on including in this paragraph but I'm not convinced that they're my best option so I'm looking into other studies before I commit. Any feedback here is welcome.
+
+
+% % studies
+
+% ~\cite{wang_wu_brown_zhang_liu_han_zuo_cheng_feng_2022}
+% -progression
+% -uses UPDRS
+% -uses MRI - T1
+% -Model
+
+% ~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}
+% - T1 MRI
+% - longitudal clustering to identify progression
+% - subtyping and progression prediction
+
+% ~\cite{shu2021predicting}
+% - T1 MRI
+% - H&Y score metric
+% - progression prediction
+
+
+% 4. 
+% - we consider the interesting nature of the Shu et al study and discuss our concerns with replication and reproduction
+% - we ask whether this is really possible to achieve
+ 
