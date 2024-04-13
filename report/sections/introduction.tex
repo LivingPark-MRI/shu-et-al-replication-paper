@@ -39,7 +39,19 @@ at the time of evaluation.
 %  - what kind of results did they get? 
 
 Delving into the realm of research leveraging T1-weighted MRI scans for predicting PD progression, we spotlight three intriguing studies. Each embarks on a unique path, utilizing differing 
-PD progression metrics, cohort sizes, and ML techniques.
+PD progression metrics, cohort sizes, and ML techniques. Salmanpour et al. used a two-pronged approach: longitudinal clustering to identify distinct PD progression patterns over four years, 
+followed by the prediction of the identified subtypes (mild, intermediate, or severe) utilizing supervised ML techniques on early data~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}. 
+Subject data for the 143 subjects in their study was obtained from the Parkinson's Progressive Marker Initiative (PPMI) dataset. T1-weighted MRI scans were segmented and the radiomic features were 
+extracted and used in combination with clinical features related to both motor and non-motor functions for both the clustering and prediction tasks. Patient data from years 0, 1, 2, and 4 was used for 
+the clustering process whereas a new dataset from only years 0 or 1 were used for the prediction task.  
+
+
+Since some 
+information of some patients were missing in some years, 
+for longitudinal clustering task, we arrived at dataset of 143 
+patients (years 0, 1, 2 and 4). For the prediction task based 
+on year 0 and/or 1, we created 3 datasets:
+
 
 % NOTE: I'm still putting together the rest of the above paragraph but it's a work in progress so I'm not including it here. I should note that I've included the three studies below
 % that I've been working on including in this paragraph but I'm not convinced that they're my best option so I'm looking into other studies before I commit. Any feedback here is welcome.
