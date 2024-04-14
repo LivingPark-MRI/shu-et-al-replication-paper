@@ -22,35 +22,44 @@ have utilized T1-weighted MRI scans to determine PD progression~\cite{salmanpour
 ~\cite{wang_wu_brown_zhang_liu_han_zuo_cheng_feng_2022}. The conventional structural T1-weighted MRI scans, owing to their simpler processing requirements, are less costly and more accessible than some 
 of the other types of MRIs. Additionally, existing software algorithms for image segmentation further enhance the utility of T1 MRIs for studies predicting PD progression~\cite{shu2021predicting}. 
 While MRI scans may provide insights into changes in the brain structure associated with the progression of PD, establishing precise metrics for evaluating disease progression is 
-equally crucial. Several clinical assessment tools are available for this purpose, including the Hoehn and Yahr (H\&Y) scale~\cite{hoehn_yahr_1998}, the Movement Disorder 
+equally crucial. Several clinical assessment tools may be applied toward this purpose, including the Hoehn and Yahr (H\&Y) scale~\cite{hoehn_yahr_1998}, the Movement Disorder 
 Society's revised version of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS)~\cite{goetz_tilley_shaftman_stebbins_fahn_martinez-martin_poewe_sampaio_stern_dodel_et_al._2008}, 
 and the Montreal Cognitive Assessment (MoCA)~\cite{nasreddine_phillips_valérie_bedirian_charbonneau_whitehead_collin_cummings_chertkow_2005}, each offering insights into the patient's state 
 at the time of evaluation.
 
-% 3. 
+Exploring research that leverages T1-weighted MRI data, we highlight three studies aimed at predicting PD progression. Each employed unique metrics, cohort sizes, and ML techniques. 
+All three studies utilized clinical and imaging data from the Parkinson's Progressive Marker Initiative (PPMI) dataset to define their cohorts. Salmanpour et al. adopted a two-pronged 
+approach: initially, they performed longitudinal clustering to identify distinct PD progression patterns over four years, and they subsequently predicted 
+these identified subtypes (mild, intermediate, or severe) using supervised ML techniques~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}. 
+T1-weighted MRI scans for the 143 subjects in their study were segmented and radiomic features were extracted. A selection of these features, along with some clinical features, were used to 
+train models for both the clustering and prediction tasks. Through clustering, 50 subjects were classified as mild, 38 as intermediate, and 55 as severe. Their trained ML classification models 
+were able to predict the progression pattern with a 76.1\% to 79.2\% prediction accuracy. Employing a methodology akin to that of Salmanpour et al., Wang et al. utilized clustering to identify 
+biotypes, followed by ML classification techniques to predict these biotypes~\cite{wang_cheng_rolls_dai_gong_du_zhang_wang_liu_wang_et_al_2020}. Their study included 314 subjects with PD and 
+145 healthy controls for comparison and evaluation. They preprocessed T1-weighted images to derive volume-based deformation-based morphometry data and selected a subset of neuroanatomic features 
+that correlated highly with PD clinical scores as part of their feature selection process. The 314 PD patients were clustered into two distinct groups: biotype 1 and biotype 2, comprising 144 
+and 200 patients respectively. Employing ML classifiers, they predicted the biotypes with an accuracy of 84.1\% (progression analysis of the biotypes over a five-year span revealed that 
+patients classified under biotype 1 had a significantly higher progression rate, based on their MDS-UPDRS scores, than those under biotype 2). Taking an alternative approach, Shu et al. measured 
+the H\&Y score at baseline and again after three years to directly quantify the rate of progression and determine a binary classification of each subject in their study as either `stable' or 
+`progression'~\cite{shu2021predicting}. After this classification, they constructed a cohort of 144 subjects equally split between the two categories. Like Salmanpour et al., Shu et al. recognized 
+the potential of radiomics and trained supervised ML classifiers on a selection of radiomic features extracted from segmented T1-weighted MRI scans. Aiming to predict PD progression, they developed two models: 
+one included only the radiomic features, which achieved an accuracy of 79.5\%, and the other combined radiomic features with clinical features, achieving an accuracy of 83.6\%. 
 
-% - who tried to predict progression using any metric with T1s
-
-% - for the ppl who tried to predict progression,
-%  - what metric?
-%  - which dataset?
-%  - how many subjects and what was the division?
-%  - what types of features were they looking at?
-%  - what kind of results did they get? 
-
-Delving into the realm of research leveraging T1-weighted MRI scans for predicting PD progression, we spotlight three intriguing studies. Each embarks on a unique path, utilizing differing 
-PD progression metrics, cohort sizes, and ML techniques. Salmanpour et al. used a two-pronged approach: longitudinal clustering to identify distinct PD progression patterns over four years, 
-followed by the prediction of the identified subtypes (mild, intermediate, or severe) utilizing supervised ML techniques on early data~\cite{salmanpour_mojtaba_shamsaei_ghasem_hajianfar_hamid_soltanian_zadeh_arman_rahmim_2022}. 
-Subject data for the 143 subjects in their study was obtained from the Parkinson's Progressive Marker Initiative (PPMI) dataset. T1-weighted MRI scans were segmented and the radiomic features were 
-extracted and used in combination with clinical features related to both motor and non-motor functions for both the clustering and prediction tasks. Patient data from years 0, 1, 2, and 4 was used for 
-the clustering process whereas a new dataset from only years 0 or 1 were used for the prediction task.  
+Shu et al. took an intriguing approach by employing the H\&Y score, commonly used in clinical assessments, as the metric for PD progression, and by training ML models on radiomics features to 
+predict disease progression. The performance of their models show promise, which in turn prompts the need for further analysis and raises questions about the study's reproducibility and replicability. 
+Arafe et al. attempted to reproduce the results of Shu et al. to answer those questions but were unsuccessful~\cite{Arafe2023.05.05.539590}. Building on these studies, we redefine the problem 
+by reorganizing the cohort structures and employing diverse feature selection techniques. Our goal is to rigorously evaluate whether radiomic features extracted from structural MRI scans can 
+predict the H\&Y score of PD patients.
 
 
-Since some 
-information of some patients were missing in some years, 
-for longitudinal clustering task, we arrived at dataset of 143 
-patients (years 0, 1, 2 and 4). For the prediction task based 
-on year 0 and/or 1, we created 3 datasets:
+
+
+
+
+
+
+ 
+
+
 
 
 % NOTE: I'm still putting together the rest of the above paragraph but it's a work in progress so I'm not including it here. I should note that I've included the three studies below
@@ -59,7 +68,7 @@ on year 0 and/or 1, we created 3 datasets:
 
 % % studies
 
-% ~\cite{wang_wu_brown_zhang_liu_han_zuo_cheng_feng_2022}
+% ~\cite{wang_cheng_rolls_dai_gong_du_zhang_wang_liu_wang_et_al_2020}
 % -progression
 % -uses UPDRS
 % -uses MRI - T1
